@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+      <meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Crossroads Slideshow | Codrops</title>
+		<meta name="description" content="An experimental slideshow with an inclined look with three slide previews and a content view on click." />
+		<meta name="keywords" content="slideshow, javascript, tweenmax, rotation, animation, css" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+		<style type="text/css">
+            body{
+                background-color: darkseagreen;
+            }
+        </style>
+	</head>
+	<body class="loading">
+		<main>
+			<div class="content">
+				<article class="content__item">
+					<div class="img-wrap img-wrap--content">
+						<div class="img img--content" style="background-image: url(img/1.jpg);"></div>
+					</div>
+					<header class="content__item-header">
+						<span class="content__item-header-meta">Claudio De La Cruz, 2º Indumentaria</span>
+						<h2 class="content__item-header-title">Flores</h2>
+					</header>
+					<div class="content__item-copy">
+						<p class="content__item-copy-text">
+						Parte de las plantas fanerógamas donde se encuentran los órganos reproductores que suelen estar dispuestos en cuatro verticilos (cáliz, corola, androceo y gineceo); pueden ser de muchas formas y colores distintos, unisexuales o hermafroditas, solitarias o agrupadas en inflorescencias
+						</p>
+						<a href="#" class="content__item-copy-more">more +</a>
+					</div>
+				</article>
+				<article class="content__item">
+					<div class="img-wrap img-wrap--content">
+						<div class="img img--content" style="background-image: url(img/2.jpg);"></div>
+					</div>
+					<header class="content__item-header">
+						<span class="content__item-header-meta">Erika Montes, 1º T.S. Diseño de Moda</span>
+						<h2 class="content__item-header-title">Cometa</h2>
+					</header>
+					<div class="content__item-copy">
+						<p class="content__item-copy-text">
+						Juguete consistente en un armazón plano y muy ligero cubierto o forrado de tela, papel, etc., sujeto con un cordel largo que se echa al aire para que las corrientes de aire lo eleven y muevan.
+						</p>
+						<a href="#" class="content__item-copy-more">more +</a>
+					</div>
+				</article>
+				<article class="content__item">
+					<div class="img-wrap img-wrap--content">
+						<div class="img img--content" style="background-image: url(img/3.jpg);"></div>
+					</div>
+					<header class="content__item-header">
+						<span class="content__item-header-meta">Christian Merino, 3º T.S. Diseño de Moda</span>
+						<h2 class="content__item-header-title">Comarca</h2>
+					</header>
+					<div class="content__item-copy">
+						<p class="content__item-copy-text">
+						Porción de territorio, más pequeña que una región, que se considera homogénea por diversos factores, como las condiciones naturales o la persistencia de demarcaciones históricas.
+						</p>
+						<a href="#" class="content__item-copy-more">more +</a>
+					</div>
+				</article>
+				<article class="content__item">
+					<div class="img-wrap img-wrap--content">
+						<div class="img img--content" style="background-image: url(img/4.jpg);"></div>
+					</div>
+					<header class="content__item-header">
+						<span class="content__item-header-meta">Alejandra  ffdgv, 4º T.S. Diseño de Moda</span>
+						<h2 class="content__item-header-title">Libertad</h2>
+					</header>
+					<div class="content__item-copy">
+						<p class="content__item-copy-text">
+						Facultad y derecho de las personas para elegir de manera responsable su propia forma de actuar dentro de una sociedad.
+						</p>
+						<a href="#" class="content__item-copy-more">more +</a>
+					</div>
+				</article>
+			</div>
+			<div class="revealer">
+				<div class="revealer__inner"></div>
+			</div>
+			<div class="grid grid--slideshow">
+				<figure class="grid__item grid__item--slide">
+					<span class="number">Flores</span>
+					<div class="img-wrap">
+						<div class="img" style="background-image: url(img/1.jpg);"></div>
+					</div>
+					<figcaption class="caption">Claudio De La Cruz, 2º Indumentaria</figcaption>
+				</figure>
+				<figure class="grid__item grid__item--slide">
+					<span class="number">Cometa</span>
+					<div class="img-wrap">
+						<div class="img" style="background-image: url(img/2.jpg);"></div>
+					</div>
+					<figcaption class="caption">Erika Montes, 1º T.S. Diseño de Moda</figcaption>
+				</figure>
+				<figure class="grid__item grid__item--slide">
+					<span class="number">Comarca</span>
+					<div class="img-wrap">
+						<div class="img" style="background-image: url(img/3.jpg);"></div>
+					</div>
+					<figcaption class="caption">Christian Merino, 3º T.S. Diseño de Moda</figcaption>
+				</figure>
+				<figure class="grid__item grid__item--slide">
+					<span class="number">Libertad</span>
+					<div class="img-wrap">
+						<div class="img" style="background-image: url(img/4.jpg);"></div>
+					</div>
+					<figcaption class="caption">Alejandra  ffdgv, 4º T.S. Diseño de Moda</figcaption>
+				</figure>
+
+				<div class="titles-wrap">
+					<div class="grid grid--titles">
+						<h3 class="grid__item grid__item--title">FIMI </h3>
+						<h3 class="grid__item grid__item--title">Moda </h3>
+						<h3 class="grid__item grid__item--title">Infantil</h3>
+				        <h3 class="grid__item grid__item--title"></h3>
+					</div>
+				</div>
+				<div class="grid grid--interaction">
+					<div class="grid__item grid__item--cursor grid__item--left">Gener 2020 Desfile FIMI</div>
+					<div class="grid__item grid__item--cursor grid__item--center"></div>
+					<div class="grid__item grid__item--cursor grid__item--right"></div>
+				</div>
+			</div>
+			<div class="frame">
+				<div class="frame__title-wrap">
+					<h1 class="frame__title"><a href="http://www.easdalcoi.es/">EASD ALCOY</a></h1>
+					<div class="frame__links">
+						<a href="http://www.easdalcoi.es/estudis/e-s-disseny-de-moda/">T.S. Diseño de Moda</a>
+						<a href="http://www.easdalcoi.es/">Marina</a>
+						<a href="http://www.easdalcoi.es/">Lara</a>
+					</div>
+					<div class="frame__mode" role="radiogroup">
+						<div class="frame__mode-item frame__mode-item--dark">
+							<input id="mode-1" type="radio" name="mode" class="frame__mode-input"></input>
+							<label class="frame__mode-label" for="mode-1">Dark mode</label>
+						</div>
+						<div class="frame__mode-item">
+							<input id="mode-2" type="radio" name="mode" class="frame__mode-input" checked></input>
+							<label class="frame__mode-label frame__mode-label--light" for="mode-2">Light mode</label>
+						</div>
+					</div>
+				</div>
+			</div><!-- /frame -->
+		</main>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/charming.min.js"></script>
+		<script src="js/TweenMax.min.js"></script>
+		<script src="js/demo.js"></script>
+	</body>
+</html>
